@@ -1,0 +1,113 @@
+﻿.bubble-block
+{
+    border-radius:1000px;
+    margin-bottom: 5px;
+    margin-right:4px;
+    padding: 6px 12px;
+    display:inline-block;
+    white-space:nowrap;
+    overflow-x:hidden;
+    text-overflow:ellipsis;    
+}
+
+.glyphicon.glyphicon-click
+{
+    cursor: pointer;
+}
+
+.glyphicon.glyphicon-help
+{
+    cursor:help;
+}
+
+.glyphicon.glyphicon-click:hover, .glyphicon.glyphicon-click:active, 
+.glyphicon.glyphicon-help:hover, .glyphicon.glyphicon-help:active
+{
+    opacity: .7;
+}
+
+.bubble-block:focus, .bubble-block:active:focus, .bubble-block.active:focus, .bubble-block.focus, .bubble-block:active.focus, .bubble-block.active.focus 
+{
+    outline: none;
+}
+
+.bubble-block > .glyphicon
+{
+    margin-left:5px;
+}
+
+.bubble-block .badge
+{
+    margin-top:-3px;
+    margin-left:-2px;
+}
+
+.bubble-block.btn-default 
+{
+    background:#dddddd;
+    color:black;
+}
+
+.bubble-block.bg-default 
+{
+    background:#bbbbbb;
+    color:black;
+}
+
+.bubble-block.bg-default .badge, .bubble-block.btn-default .badge 
+{
+    background: black;
+    color: #bbbbbb;
+}
+
+.bubble-block.btn-default:hover, .bubble-block.btn-default:active 
+{
+    background: #cccccc;
+}
+
+.bubble-block.btn-danger 
+{
+    background: #d9534f;
+    color: white;
+}
+
+.bubble-block.bg-danger 
+{
+    background:#d9534f;
+    color:white;
+}
+
+.bubble-block.bg-danger .badge, .bubble-block.btn-danger .badge 
+{
+    background: white;
+    color: #d9534f;
+}
+
+.bubble-block.btn-danger:hover, .bubble-block.btn-danger:active 
+{
+    background: #c9302c;
+}
+
+
+.bubble-block.btn-primary 
+{
+    background: #337ab7;
+    color: white;
+}
+
+.bubble-block.bg-primary 
+{
+    background: #337ab7;
+    color: white;
+}
+
+.bubble-block.bg-primary .badge, .bubble-block.btn-primary .badge 
+{
+    background: white;
+    color: #337ab7;
+}
+
+.bubble-block.btn-primary:hover, .bubble-block.btn-primary:active 
+{
+    background: #286090;
+}
