@@ -1,113 +1,165 @@
-﻿.bubble-block
-{
-    border-radius:1000px;
+﻿.bubble-block {
+    border-radius: 1000px;
     margin-bottom: 5px;
-    margin-right:4px;
+    margin-right: 4px;
     padding: 6px 12px;
-    display:inline-block;
-    white-space:nowrap;
-    overflow-x:hidden;
-    text-overflow:ellipsis;    
+    display: inline-block;
 }
 
-.glyphicon.glyphicon-click
-{
+.bubble-block-width {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bubble-block-ellipsis {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.glyphicon.glyphicon-click {
     cursor: pointer;
 }
 
-.glyphicon.glyphicon-help
-{
-    cursor:help;
+.glyphicon.glyphicon-help {
+    cursor: help;
 }
 
-.glyphicon.glyphicon-click:hover, .glyphicon.glyphicon-click:active, 
-.glyphicon.glyphicon-help:hover, .glyphicon.glyphicon-help:active
-{
+.glyphicon.glyphicon-click:hover, .glyphicon.glyphicon-click:active,
+.glyphicon.glyphicon-help:hover, .glyphicon.glyphicon-help:active {
     opacity: .7;
 }
 
-.bubble-block:focus, .bubble-block:active:focus, .bubble-block.active:focus, .bubble-block.focus, .bubble-block:active.focus, .bubble-block.active.focus 
-{
+.bubble-block:focus, .bubble-block:active:focus, .bubble-block.active:focus, .bubble-block.focus, .bubble-block:active.focus, .bubble-block.active.focus {
     outline: none;
 }
 
-.bubble-block > .glyphicon
-{
-    margin-left:5px;
+.bubble-block > .glyphicon {
+    margin-top: -10px;
+    margin-left: 5px;
 }
 
-.bubble-block .badge
-{
-    margin-top:-3px;
-    margin-left:-2px;
+.bubble-block .badge {
+    margin-top: -3px;
+    margin-left: -2px;
 }
 
-.bubble-block.btn-default 
-{
-    background:#dddddd;
-    color:black;
+/*Default Style*/
+.bubble-block.btn-default {
+    background: #dddddd;
+    color: #525252;
 }
 
-.bubble-block.bg-default 
-{
-    background:#bbbbbb;
-    color:black;
+.bubble-block.bg-default {
+    background: #dddddd;
+    color: #525252;
 }
 
-.bubble-block.bg-default .badge, .bubble-block.btn-default .badge 
-{
-    background: black;
-    color: #bbbbbb;
+.bubble-block.bg-default .badge, .bubble-block.btn-default .badge {
+    background: #525252;
+    color: #dddddd;
 }
 
-.bubble-block.btn-default:hover, .bubble-block.btn-default:active 
-{
+.bubble-block.btn-default:hover, .bubble-block.btn-default:active {
     background: #cccccc;
 }
 
-.bubble-block.btn-danger 
-{
+/*Danger Style*/
+.bubble-block.btn-danger {
     background: #d9534f;
     color: white;
 }
 
-.bubble-block.bg-danger 
-{
-    background:#d9534f;
-    color:white;
+.bubble-block.bg-danger {
+    background: #d9534f;
+    color: white;
 }
 
-.bubble-block.bg-danger .badge, .bubble-block.btn-danger .badge 
-{
+.bubble-block.bg-danger .badge, .bubble-block.btn-danger .badge {
     background: white;
     color: #d9534f;
 }
 
-.bubble-block.btn-danger:hover, .bubble-block.btn-danger:active 
-{
+.bubble-block.btn-danger:hover, .bubble-block.btn-danger:active {
     background: #c9302c;
 }
 
-
-.bubble-block.btn-primary 
-{
+/*Primary Style*/
+.bubble-block.btn-primary {
     background: #337ab7;
     color: white;
 }
 
-.bubble-block.bg-primary 
-{
+.bubble-block.bg-primary {
     background: #337ab7;
     color: white;
 }
 
-.bubble-block.bg-primary .badge, .bubble-block.btn-primary .badge 
-{
+.bubble-block.bg-primary .badge, .bubble-block.btn-primary .badge {
     background: white;
     color: #337ab7;
 }
 
-.bubble-block.btn-primary:hover, .bubble-block.btn-primary:active 
-{
+.bubble-block.btn-primary:hover, .bubble-block.btn-primary:active {
     background: #286090;
+}
+
+/*Success Style*/
+.bubble-block.btn-success {
+    background: #5cb85c;
+    color: white;
+}
+
+.bubble-block.bg-success {
+    background: #5cb85c;
+    color: white;
+}
+
+.bubble-block.bg-success .badge, .bubble-block.btn-success .badge {
+    background: white;
+    color: #5cb85c;
+}
+
+.bubble-block.btn-success:hover, .bubble-block.btn-success:active {
+    background: #449d44;
+}
+
+/*Info Style*/
+.bubble-block.btn-info {
+    background: #5bc0de;
+    color: white;
+}
+
+.bubble-block.bg-info {
+    background: #5bc0de;
+    color: white;
+}
+
+.bubble-block.bg-info .badge, .bubble-block.btn-info .badge {
+    background: white;
+    color: #5bc0de;
+}
+
+.bubble-block.btn-info:hover, .bubble-block.btn-info:active {
+    background: #31b0d5;
+}
+
+/*Warning Style*/
+.bubble-block.btn-warning {
+    background: #f0ad4e;
+    color: white;
+}
+
+.bubble-block.bg-warning {
+    background: #f0ad4e;
+    color: white;
+}
+
+.bubble-block.bg-warning .badge, .bubble-block.btn-warning .badge {
+    background: white;
+    color: #f0ad4e;
+}
+
+.bubble-block.btn-warning:hover, .bubble-block.btn-warning:active {
+    background: #ec971f;
 }
