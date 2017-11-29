@@ -13,9 +13,7 @@
             {
                 console.log($(this).find(".bubble-block-width").length > 0);
                 return;
-            }
-
-            $(this).prop("title", $(this).text());
+            }            
 
             //data attributes
             var maxWidth = $(this).data("width");
@@ -29,13 +27,15 @@
             //defaults
             maxWidth = maxWidth ? maxWidth : 250;
 
-            //generate html
-            var text = $(this).text();
+            //generate html            
             var children = $(this).children();
+            children.remove();
+            var text = $(this).text();
             $(this).empty();
             $(this).append('<div class="bubble-block-width"><div class="bubble-block-ellipsis"></div></div>');
             $(this).append(children);
             $(this).find(".bubble-block-ellipsis").text(text);
+            $(this).prop("title", text);
 
             //set properties
             $(this).find(".bubble-block-width").css("max-width", maxWidth - $(this).outerWidth(false) + $(this).find(".bubble-block-width").outerWidth(true));
