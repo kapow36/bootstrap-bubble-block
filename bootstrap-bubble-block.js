@@ -11,9 +11,8 @@
 
             if ($(this).find(".bubble-block-width").length > 0)
             {
-                console.log($(this).find(".bubble-block-width").length > 0);
                 return;
-            }            
+            }
 
             //data attributes
             var maxWidth = $(this).data("width");
@@ -27,15 +26,10 @@
             //defaults
             maxWidth = maxWidth ? maxWidth : 250;
 
-            //generate html            
-            var children = $(this).children();
-            children.remove();
-            var text = $(this).text();
-            $(this).empty();
-            $(this).append('<div class="bubble-block-width"><div class="bubble-block-ellipsis"></div></div>');
-            $(this).append(children);
-            $(this).find(".bubble-block-ellipsis").text(text);
-            $(this).prop("title", text);
+            //generate html
+            var textSpan = $(this).find('span:not([class])');
+            textSpan.wrap('<div class="bubble-block-width"><div class="bubble-block-ellipsis"></div></div>');
+            textSpan.prop("title", textSpan.text());
 
             //set properties
             $(this).find(".bubble-block-width").css("max-width", maxWidth - $(this).outerWidth(false) + $(this).find(".bubble-block-width").outerWidth(true));
@@ -47,5 +41,11 @@
 
 $(document).ready(function ()
 {
+    $(document).on("click", ".bubble-block .glyphicon-click", function ()
+    {
+        //submit any forms on a bubble block glyphicon click
+        $(this).closest(".bubble-block").find("form").submit();
+    });
+
     $(".bubble-block").bubbleBlock();
 });
